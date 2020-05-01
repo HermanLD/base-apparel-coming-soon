@@ -1,0 +1,45 @@
+:root {
+    
+    /* COLOR */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+
+    /* GRADIENTS */
+    --white-grad: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+    --red-grad: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+
+    /* TYPOGRAPHY */
+    --body-font: 16px;
+    --font-fam: 'Josefin Sans', sans-serif;
+
+    /* FONT WEIGHT */
+    --small: 300;
+    --med: 400;
+    --lrg: 600;
+}
+
+/* ------------------------- */
+/* RESETS */
+/* ------------------------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--font-fam);
+    font-weight: var(--med);
+    font-size: var(--body-font);
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
