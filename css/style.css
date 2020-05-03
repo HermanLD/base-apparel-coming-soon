@@ -39,7 +39,155 @@ body {
 
 h1 {
     font-size: 3rem;
+    letter-spacing: 12px;
+    color: var(--dark-grayish-red);
+    font-weight: var(--lrg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    padding: 30px 15px;
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 250px;
+    background-image: url('../images/hero-mobile.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.highlight {
+    color: var(--desaturated-red);
+    font-weight: var(--small);
+}
+
+.newsletter {
+    text-align: center;
+    padding: 70px 15px 70px 15px;
+}
+
+.newsletter p {
+    line-height: 25px;
+    color: var(--desaturated-red);
+    padding: 25px 0;
+}
+
+.form {
+    position: relative;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid var(--desaturated-red);
+    border-radius: 40px;
+    padding-left: 20px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid var(--dark-grayish-red);
+}
+
+input::placeholder {
+    font-family: var(--font-fam);
+    color: var(--desaturated-red);
+}
+
+input:invalid {
+    /* border: 2px solid var(--soft-red); */
+}
+
+.submit-btn {
+    position: absolute;
+    right: 0px;
+    height: 50px;
+    width: 20%;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(var(--red-grad));
+    transform: scale(1);
+    transition: all 150ms ease-in-out;
+}
+
+.submit-btn:hover {
+    transform: scale(1.1);
+    transition: all 150ms ease-in-out;
+    box-shadow: -5px 8px 27px -5px var(--desaturated-red);
+}
+
+.error-msg {
+    visibility: hidden;
+    color: var(--desaturated-red);
+}
+
+.error-icon {
+    visibility: hidden;
+    position: absolute;
+    right: 110px;
+    top: 12px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 768px) {
+    .container {
+        height: 100vh;
+        align-content: space-between;
+    }
+
+    .header {
+        width: 45%;
+        padding: 90px 0px 0px 100px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .newsletter {
+        width: 45%;
+        padding: 140px 0px 140px 100px;
+        text-align: left;
+    }
+    
+    .hero-img {
+        order: 1;
+        height: 100vh;
+        width: 40%;
+        background-image: url('../images/hero-desktop.jpg');
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    .header {
+        width: 45%;
+        padding: 110px 0px 0px 200px;
+    }
+
+
+    .newsletter {
+        padding: 140px 15px 140px 200px;
+    }
+    
+}

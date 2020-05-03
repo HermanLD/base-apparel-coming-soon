@@ -12,27 +12,32 @@
 
 </head>
 <body>
-  <div class="header"><img src="images/logo.svg"></div>
+  <div class="container">
+    <div class="header"><img class="logo" src="images/logo.svg"></div>
   
-  <div class="hero-img"></div>
-  
-  <div class="newsletter">
-    <h1>WE'RE COMING SOON</h1>
+    <div class="hero-img"></div>
+    
+    <div class="newsletter">
+      <h1>
+        <span class="highlight">WE'RE</span>
+        <br>COMING<br>SOON
+      </h1>
 
-    <p>Hello fellow shoppers! We're currently building our new fashion store. 
-    Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <p>Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-    <form class="form">
-      <input type="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email Address" required>
-      <button class="submit-btn" type='submit'><img src="images/icon-arrow.svg"></button>
-    </form>
+      <form class="form">
+        <input type="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email Address" required>
+        <button class="submit-btn" type='submit'><img src="images/icon-arrow.svg"></button><img class="error-icon" src="images/icon-error.svg">
+        <div class="error-msg"></div>
+      </form>
+    </div>
   </div>
-  
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Herman Dardon</a>.
+      </p>
+    </footer>
 </body>
 </html>
