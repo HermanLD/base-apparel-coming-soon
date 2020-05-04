@@ -77,6 +77,8 @@ h1 {
 }
 
 .newsletter {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 70px 15px 70px 15px;
 }
@@ -89,6 +91,7 @@ h1 {
 
 .form {
     position: relative;
+    max-width: 550px;
 }
 
 input {
@@ -109,8 +112,9 @@ input::placeholder {
     color: var(--desaturated-red);
 }
 
-input:invalid {
-    /* border: 2px solid var(--soft-red); */
+input.invalid {
+    border: 2px solid var(--soft-red);
+    color: var(--desaturated-red);
 }
 
 .submit-btn {
@@ -134,6 +138,8 @@ input:invalid {
 .error-msg {
     visibility: hidden;
     color: var(--desaturated-red);
+    text-align: left;
+    padding: 10px 20px;
 }
 
 .error-icon {

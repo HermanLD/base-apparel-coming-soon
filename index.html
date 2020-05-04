@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="header"><img class="logo" src="images/logo.svg"></div>
+    <div class="header"><img class="logo" src="images/logo.svg" alt=""></div>
   
     <div class="hero-img"></div>
     
@@ -27,8 +27,8 @@
       Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
       <form class="form">
-        <input type="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email Address" required>
-        <button class="submit-btn" type='submit'><img src="images/icon-arrow.svg"></button><img class="error-icon" src="images/icon-error.svg">
+        <input class="email" type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email Address" required>
+        <img class="error-icon" src="images/icon-error.svg" alt=""><button class="submit-btn" type='submit'><img src="images/icon-arrow.svg"></button>
         <div class="error-msg"></div>
       </form>
     </div>
@@ -39,5 +39,6 @@
         Coded by <a href="#">Herman Dardon</a>.
       </p>
     </footer>
+    <script src="js/form-validation.js"></script>
 </body>
 </html>
