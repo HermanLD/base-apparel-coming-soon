@@ -68,9 +68,6 @@ $ git clone https://github.com/HermanLD/base-apparel-coming-soon
 
 # Install dependencies
 $ npm install
-
-# Run the app
-$ npm start
 ```
 
 ## Acknowledgements
